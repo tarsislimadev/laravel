@@ -1,0 +1,5 @@
+# Laravel
+
+## License
+
+[MIT](./LICENSE)
