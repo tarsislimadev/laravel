@@ -3,7 +3,7 @@ version: '3'
 services:
 
   app:
-    image: 'laravel1'
+    image: 'tmvdl/php:laravel'
     build: './src/app'
     volumes:
       - './src/app:/app'
