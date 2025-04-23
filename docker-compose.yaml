@@ -1,7 +1,9 @@
 version: '3'
 
 services:
-  app: 
+
+  app:
+    image: 'workana/project1'
     build: './src/app'
     volumes:
       - './src/app:/app'
