@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Test docker login
-        run: echo "DOCKER_USERNAME: ${DOCKER_USERNAME}; DOCKER_PASSWORD: ${DOCKER_PASSWORD}"
+        run: echo "DOCKER_USERNAME -> ${DOCKER_USERNAME}; DOCKER_PASSWORD -> ${DOCKER_PASSWORD};"
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
