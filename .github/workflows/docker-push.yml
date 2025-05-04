@@ -14,6 +14,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Test docker login
+        run: echo "DOCKER_USERNAME: ${DOCKER_USERNAME}; DOCKER_PASSWORD: ${DOCKER_PASSWORD}"
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
       - name: Docker login
         uses: docker/login-action@v2
         with:
